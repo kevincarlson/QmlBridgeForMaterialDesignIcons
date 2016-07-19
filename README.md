@@ -10,4 +10,63 @@ This project provides a simple interface for integrating the Material Design Ico
 4. Import `Icon.js` in any QML file where icons will be referenced: `import "Icon.js" as MdiFont`
 5. Add the desired icon to any QML item that can display text
     * Set font.family to "Material Design Icons"
-    * Set the text property to the desired property of MdiFont.Icon, e.g. MdiFont.Icon.mdiFileImage
+    * Set the text property to the desired property of MdiFont.Icon, e.g. `MdiFont.Icon.mdiFileImage`
+
+## Example
+
+A simple, reusable QML Icon Button may look like this:
+
+```
+
+import QtQuick 2.7
+import QtQuick.Controls 2.0
+import "Icon.js" as MdiFont
+
+Button {
+    implicitHeight: 48
+    implicitWidth: 48
+    font.pointSize: 24
+    font.family: "Material Design Icons"
+}
+
+```
+
+The control could be used as follows, for a simple formatting toolbar:
+
+```
+
+import QtQuick 2.7
+import QtQuick.Controls 2.0
+import QtQuick.Layouts 1.1
+import "Icon.js" as MdiFont
+
+ToolBar {
+    height: 56
+    RowLayout {
+        IconButton {
+            text: MdiFont.Icon.mdiFormatBold
+            checkable: true
+        }
+
+        IconButton {
+            text: MdiFont.Icon.mdiFormatItalic
+            checkable: true
+        }
+
+        IconButton {
+            text: MdiFont.Icon.mdiFormatUnderline
+            checkable: true
+        }
+        
+                Item { width: 8 }
+
+        IconButton {
+            text: MdiFont.Icon.mdiFormatIndentDecrease
+        }
+
+        IconButton {
+            text: MdiFont.Icon.mdiFormatIndentIncrease
+        }
+    }
+}
+```
