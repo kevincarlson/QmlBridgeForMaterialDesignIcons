@@ -17,7 +17,6 @@ This project provides a simple interface for integrating the Material Design Ico
 A simple, reusable QML Icon Button may look like this:
 
 ```
-
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import "Icon.js" as MdiFont
@@ -28,13 +27,11 @@ Button {
     font.pointSize: 24
     font.family: "Material Design Icons"
 }
-
 ```
 
 The control could be used as follows, for a simple formatting toolbar:
 
 ```
-
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.1
@@ -58,7 +55,9 @@ ToolBar {
             checkable: true
         }
         
-                Item { width: 8 }
+        Item {
+            width: 8
+        }
 
         IconButton {
             text: MdiFont.Icon.mdiFormatIndentDecrease
