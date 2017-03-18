@@ -41,17 +41,17 @@ ToolBar {
     height: 56
     RowLayout {
         IconButton {
-            text: MdiFont.Icon.mdiFormatBold
+            text: MdiFont.Icon.formatBold
             checkable: true
         }
 
         IconButton {
-            text: MdiFont.Icon.mdiFormatItalic
+            text: MdiFont.Icon.formatItalic
             checkable: true
         }
 
         IconButton {
-            text: MdiFont.Icon.mdiFormatUnderline
+            text: MdiFont.Icon.formatUnderline
             checkable: true
         }
         
@@ -60,11 +60,11 @@ ToolBar {
         }
 
         IconButton {
-            text: MdiFont.Icon.mdiFormatIndentDecrease
+            text: MdiFont.Icon.formatIndentDecrease
         }
 
         IconButton {
-            text: MdiFont.Icon.mdiFormatIndentIncrease
+            text: MdiFont.Icon.formatIndentIncrease
         }
     }
 }
