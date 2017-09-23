@@ -11,6 +11,8 @@ This project provides a simple interface for integrating the Material Design Ico
 5. Add the desired icon to any QML item that can display text
     * Set font.family to "Material Design Icons"
     * Set the text property to the desired property of MdiFont.Icon, e.g. `MdiFont.Icon.mdiFileImage`
+    
+For a more thorough step by step guide, as well as an explanation of the design process, see [https://kevincarlson.codes/using-material-design-icons-with-qml/](https://kevincarlson.codes/using-material-design-icons-with-qml/).
 
 ## Example
 
@@ -18,6 +20,7 @@ A simple, reusable QML Icon Button may look like this:
 
 ```
 import QtQuick 2.7
+
 import QtQuick.Controls 2.0
 import "Icon.js" as MdiFont
 
