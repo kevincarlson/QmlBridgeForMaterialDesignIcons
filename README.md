@@ -1,6 +1,8 @@
 # QmlBridgeForMaterialDesignIcons
 
-This project provides a simple interface for integrating the Material Design Icons font into Qt/QML projects, which pairs nicely with the new Material Design theme for Qt Quick Controls 2. It is released under the terms of the SIL Open Font License, version 1.1, in order to match the licensing terms that apply to the font.
+This project provides a look up table for using the Material Design Icons font in Qt/QML projects. The font contains thousands of icons designed to match Android's native icon set, which should help make applications that target mobile devices feel more at home on that platform.
+
+The look up table is released under the terms of the MIT license, in order to permit usage in commercial applications distributed through the various app stores. The complete licensing terms are included at the top of the Icon.js file. This repository contains a copy of the Material Design Icons web font, which is distributed under the terms of the Apache Software License, version 2.0.
 
 ## Using The Icons in a QML Project
 
